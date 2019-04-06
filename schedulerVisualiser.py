@@ -134,7 +134,7 @@ class ScheduleGraph:
 
 
 if __name__ == "__main__":   
-    ta = [createTask(4,1,3), createTask(5,1,4), createTask(6,2,5),createTask(11,1,10)]
+    ta = [createTask(4,1,3), createTask(5,3,4), createTask(5,3,5),createTask(20,1,10)]
     ta2 = [createTask(6,2,5), createTask(8,2,4), createTask(12,4,8)]
 
     a = ScheduleGraph("first_ex", ta2, getHyperPeriod(ta2), 50, 50)
